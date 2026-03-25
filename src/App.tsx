@@ -939,7 +939,7 @@ export default function App() {
                   <p className="mt-3 text-[12px] text-[#8d8985]">{content.pricing.description}</p>
                 </div>
 
-                <div ref={pricingScrollRef} className="mt-6 pt-4 lg:mt-10 lg:pt-0 flex overflow-x-auto pb-8 snap-x snap-mandatory gap-5 lg:grid lg:grid-cols-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <div ref={pricingScrollRef} className="mt-6 pt-4 lg:mt-10 flex overflow-x-auto lg:overflow-visible pb-8 snap-x snap-mandatory gap-5 lg:grid lg:grid-cols-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   {content.pricing.cards.map((card) => (
                     <motion.article
                       key={card.eyebrow}
